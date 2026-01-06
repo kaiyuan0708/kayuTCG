@@ -4,8 +4,20 @@ import "./AppHeader.css";
 export function AppHeader() {
   return (
     <header>
-      <NavLink to="/">Main</NavLink>
-      <NavLink to="/contactus">Contact</NavLink>
+      <nav className="nav-left">
+        <NavLink to="/" className="logo-link">
+          <img
+            src="/KYTCG.png"
+            alt="KY Logo"
+            className="logo"
+          />
+          <span>Main</span>
+        </NavLink>
+      </nav>
+
+      <nav className="nav-right">
+        <NavLink to="/contactus">Contact</NavLink>
+      </nav>
     </header>
   );
 }
