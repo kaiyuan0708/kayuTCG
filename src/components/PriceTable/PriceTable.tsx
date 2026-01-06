@@ -21,14 +21,37 @@ export function PriceTable({ items }: Props) {
       <tbody>
         {items.map((item) => (
           <tr key={item.code}>
-            <td>
+            <td className="image-cell">
               <img src={item.imageUrl} alt={item.code} />
             </td>
             <td>{item.code}</td>
-            <td>{item.shrinked}</td>
-            <td>{item.unshrinked}</td>
-            <td>{item.noBox}</td>
-            <td>{item.loosePack}</td>
+            <td>
+              <div className="price-cell">
+                <span className="price-value">{item.shrinked}</span>
+                <span className="price-desc">(Shrinked)</span>
+              </div>
+            </td>
+
+            <td>
+              <div className="price-cell">
+                <span className="price-value">{item.unshrinked}</span>
+                <span className="price-desc">(Unshrinked)</span>
+              </div>
+            </td>
+
+            <td>
+              <div className="price-cell">
+                <span className="price-value">{item.noBox}</span>
+                <span className="price-desc">(No Box)</span>
+              </div>
+            </td>
+
+            <td>
+              <div className="price-cell">
+                <span className="price-value">{item.loosePack}</span>
+                <span className="price-desc">(Loose Pack)</span>
+              </div>
+            </td>
           </tr>
         ))}
       </tbody>

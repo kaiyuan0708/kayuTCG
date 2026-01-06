@@ -16,7 +16,7 @@ export function AppHeader() {
       </nav>
 
       <nav className="nav-right">
-        <NavLink to="/contactus">Contact</NavLink>
+        <NavLink to="/contactus">Contact Us</NavLink>
       </nav>
     </header>
   );

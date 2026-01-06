@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { MainLayout } from "../layouts/MainLayout";
 import { PriceList } from "../pages/PriceList/PriceList";
-import { ContactUs } from "../pages/ContactUs";
+import { ContactUs } from "../pages/ContactUs/ContactUs";
 import { NotFound } from "../pages/NotFound";
 
 export const AppRoutes = () => {
