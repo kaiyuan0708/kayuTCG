@@ -17,7 +17,7 @@ function mapRowsToPriceItems(response: SheetResponse): PriceItem[] {
       shrinked: Number(c[3]?.v ?? 0),
       unshrinked: Number(c[4]?.v ?? 0),
       noBox: Number(c[5]?.v ?? 0),
-      loosePack: Number(c[6]?.v ?? 0),
+      loosePack: String(c[6]?.v ?? "-"),
     };
   });
 }

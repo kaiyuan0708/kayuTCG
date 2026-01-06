@@ -27,5 +27,5 @@ export type PriceItem = {
   shrinked?: number;
   unshrinked?: number;
   noBox?: number;
-  loosePack?: number;
+  loosePack?: string;
 };
