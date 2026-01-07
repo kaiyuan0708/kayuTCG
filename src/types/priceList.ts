@@ -1,5 +1,3 @@
-// src/types/priceList.ts
-
 export type SheetCell = {
   v?: string | number | null;
   f?: string;
