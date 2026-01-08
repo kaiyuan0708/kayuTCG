@@ -24,35 +24,37 @@ export function PriceTable({ items }: Props) {
       <tbody>
         {items.map((item) => (
           <tr key={item.code}>
-            <td className="image-cell">
+            <td className="image-cell" data-label={t("product")}>
               <img src={item.imageUrl} alt={item.code} />
             </td>
-            <td>{item.code}</td>
-            <td>
+
+            <td data-label="Code">{item.code}</td>
+
+            <td data-label={t("shrinked")}>
               <div className="price-cell">
                 <span className="price-value">{item.shrinked}</span>
                 <span className="price-desc">({t("shrinked")})</span>
               </div>
             </td>
 
-            <td>
+            <td data-label={t("unshrinked")}>
               <div className="price-cell">
                 <span className="price-value">{item.unshrinked}</span>
                 <span className="price-desc">({t("unshrinked")})</span>
               </div>
             </td>
 
-            <td>
+            <td data-label={t("noBox")}>
               <div className="price-cell">
                 <span className="price-value">{item.noBox}</span>
                 <span className="price-desc">({t("noBox")})</span>
               </div>
             </td>
 
-            <td>
+            <td data-label={t("loosePack")}>
               <div className="price-cell">
                 <span className="price-value">{item.loosePack}</span>
-                <span className="price-desc">
+                 <span className="price-desc">
                   {item.loosePack == "-" ? "" : `(${t("loosePack")})`}
                 </span>
               </div>

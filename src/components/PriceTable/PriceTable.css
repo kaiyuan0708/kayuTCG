@@ -48,3 +48,61 @@
   height: auto;
   object-fit: contain;
 }
+
+/* =========================
+   Mobile Card Layout
+========================= */
+@media (max-width: 768px) {
+  .price-table thead {
+    display: none;
+  }
+
+  .price-table,
+  .price-table tbody,
+  .price-table tr,
+  .price-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .price-table tr {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #ffffff;
+  }
+
+  .price-table td {
+    border: none;
+    padding: 0.5rem 0;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #374151;
+    text-align: left;
+  }
+
+  .image-cell {
+    justify-content: center;
+  }
+
+  .image-cell::before {
+    display: none;
+  }
+
+  .image-cell img {
+    width: 140px;
+    margin: 0.5rem auto;
+  }
+
+  .price-desc {
+    display: none;
+  }
+}

@@ -1,3 +1,18 @@
 .price-list-page h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-list-page p {
+  margin-bottom: 1.5rem;
+  color: #4b5563;
+}
+
+@media (max-width: 640px) {
+  .price-list-page h1 {
+    font-size: 1.25rem;
+  }
+
+  .price-list-page p {
+    font-size: 0.9rem;
+  }
 }

@@ -25,3 +25,18 @@
 .contact-list a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 640px) {
+  .contact-page {
+    padding: 1rem;
+  }
+
+  .contact-page h1 {
+    font-size: 1.1rem;
+  }
+
+  .contact-list li {
+    font-size: 0.9rem;
+  }
+}
+
